@@ -1,8 +1,6 @@
 package com.algorithmers;
 
-/**
- * Created by DevFatani on 7/17/2016 AD.
- */
+
 public class InsertionSort {
 
     /*

@@ -12,6 +12,7 @@ public class Main {
 
         SelectionSort.run(arrNum);
 
+        BubbleSort.run(arrNum);
 
     }
 }
