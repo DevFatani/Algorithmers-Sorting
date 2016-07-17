@@ -14,5 +14,9 @@ public class Main {
 
         BubbleSort.run(arrNum);
 
+        HeapSort.run(arrNum);
+
+        QuickSort.run(arrNum);
+
     }
 }

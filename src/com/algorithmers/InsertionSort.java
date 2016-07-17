@@ -20,7 +20,6 @@ public class InsertionSort {
         int key;
 
 
-
         for (i = 1; i < n; i++) {
 
             key = arrNum[i];

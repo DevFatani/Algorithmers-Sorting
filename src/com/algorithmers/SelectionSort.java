@@ -17,7 +17,7 @@ public class SelectionSort {
 
             for (int j = i + 1; j < n; j++) {
 
-                if (arrNum[j] < arrNum[index]){
+                if (arrNum[j] < arrNum[index]) {
 
                     index = j;
 

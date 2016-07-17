@@ -3,6 +3,13 @@ package com.algorithmers;
 
 public class HeapSort {
 
+
+    /*
+    *
+    * src = http://www.code2learn.com/2011/09/heapsort-array-based-implementation-in.html
+    *
+     */
+
     private static int[] arrNum;
 
     private static int n;
@@ -14,51 +21,54 @@ public class HeapSort {
     private static int largest;
 
 
-    public static void buildHeap(int []a){
-        n=a.length-1;
-        for(int i=n/2;i>=0;i--){
-            maxHeap(a,i);
+    public static void buildHeap(int[] a) {
+        n = a.length - 1;
+
+        for (int i = n / 2; i >= 0; i--) {
+
+            maxHeap(a, i);
+
         }
     }
 
-    public static void maxHeap(int[] a, int i){
-        left=2*i;
-        right=2*i+1;
-        if(left <= n && a[left] > a[i]){
-            largest=left;
-        }
-        else{
-            largest=i;
+    public static void maxHeap(int[] a, int i) {
+        left = 2 * i;
+        right = 2 * i + 1;
+
+        if (left <= n && a[left] > a[i]) {
+            largest = left;
+        } else {
+            largest = i;
         }
 
-        if(right <= n && a[right] > a[largest]){
-            largest=right;
+        if (right <= n && a[right] > a[largest]) {
+            largest = right;
         }
-        if(largest!=i){
-            exchange(i,largest);
+        if (largest != i) {
+            exchange(i, largest);
             maxHeap(a, largest);
         }
     }
 
-    public static void exchange(int i, int j){
+    public static void exchange(int i, int j) {
 
-        int t= arrNum[i];
+        int t = arrNum[i];
 
-        arrNum[i]= arrNum[j];
+        arrNum[i] = arrNum[j];
 
-        arrNum[j]=t;
+        arrNum[j] = t;
 
     }
 
-    public static void run(int []a0){
-        arrNum =a0;
+    public static void run(int[] a0) {
+        arrNum = a0;
         buildHeap(arrNum);
 
-        for(int i=n;i>0;i--){
+        for (int i = n; i > 0; i--) {
 
             exchange(0, i);
 
-            n=n-1;
+            n = n - 1;
 
             maxHeap(arrNum, 0);
 
