@@ -36,7 +36,7 @@ public class SelectionSort {
         }
 
 
-        System.out.print("SelectionSort [");
+        System.out.print("Selection Sort [");
 
         for (int num : arrNum) {
 

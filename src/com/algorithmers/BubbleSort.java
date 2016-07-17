@@ -39,7 +39,7 @@ public class BubbleSort {
         }
 
 
-        System.out.print("BubbleSort [");
+        System.out.print("Bubble Sort [");
 
         for (int num : arrNum) {
 

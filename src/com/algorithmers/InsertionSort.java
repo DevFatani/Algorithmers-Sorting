@@ -36,7 +36,7 @@ public class InsertionSort {
 
         }
 
-        System.out.print("InsertionSort [");
+        System.out.print("Insertion Sort [");
 
         for (int num : arrNum) {
 
